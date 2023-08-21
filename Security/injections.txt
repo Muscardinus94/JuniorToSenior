@@ -1,0 +1,5 @@
+Injections 해결
+
+Sanitize input
+Parametrize Queries = Query 검사
+Knex.js or other ORMS
