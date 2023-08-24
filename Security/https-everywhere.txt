@@ -1,0 +1,6 @@
+https = http + ssl/tls certificates
+
+전송되는 데이터를 암호화해서 전달
+
+https://letsencrypt.org 에서 인증 받기
+https://cloudflare.com

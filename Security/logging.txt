@@ -1,0 +1,7 @@
+Logging
+정보를 얻는 것
+
+충분하지 않은 Logging은 보안에 위협이 된다
+
+npm install winston
+npm install morgan

@@ -1,0 +1,5 @@
+3rd party library 선정 조건
+
+Star 확인
+nsp check (이제는 불필요)
+snyk test (이제는 불필요)

