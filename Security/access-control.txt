@@ -1,0 +1,16 @@
+유저의 할당 권한에 따라서 제약조건을 주는 것
+
+Principle of least Privilege
+권한을 최소화하자
+
+cors를 무조건 허용이 아닌 특정 제약 조건을 주자
+var whitelist = ['http://example1.com', 'http://example2.com']
+var corsOptionsDelegate = function (origin, callback) {
+  var corsOptions;
+  if (whitelist.indexOf(req.header('Origin')) !== -1) {
+    callback(null, true) // reflect (enable) the requested origin in the CORS response
+  } else {
+    callback(new Error('Not Allowed by CORS') // disable CORS for this request
+  }
+}
+app.use(cors(corsOptions));
